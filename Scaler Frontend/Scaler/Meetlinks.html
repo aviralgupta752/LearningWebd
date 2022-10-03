@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            MeetLink
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <script>
+        var sites = [
+            'meet.google.com/sdf-fgf-jgg',
+            'http://www.stackoverflow.com',
+            'http://www.example.com',
+            'http://www.youtube.com'
+        ];
+    
+        function randomSite() {
+            var i = parseInt(Math.random() * sites.length);
+            location.href = sites[i];
+        }
+    </script>
+    <a href="#" onclick="randomSite();">Random</a>
+
+</body>
+</html>
+
